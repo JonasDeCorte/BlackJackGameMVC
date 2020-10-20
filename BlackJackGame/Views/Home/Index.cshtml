@@ -1,0 +1,70 @@
+﻿@model BlackJackGame.Models.BlackJack
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Blackjack</title>
+    <link href="~/BJ.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="playGround">
+        <h1>
+            @(Model.GameSummary() == null ? "Next..." : Model.GameSummary()) <!--Controleren of gamesummery al dan niet null is, als null is dan next-->
+        </h1>
+        <p class="hand">
+            @foreach (var c in Model.DealerHand.Cards)
+            {
+                if (c.FaceUp)
+                {
+                    int suit = (int)c.Suit; // de waarde uit enum types, voor harten als dit 1
+                    int value = (int)c.FaceValue; // 1 voor de ace bvb
+                    int kaartnummer = ((suit - 1) * 13) + value - 1;
+                    <img src="~/images/kaart@(kaartnummer).gif" alt="DealerCard" />
+                }
+                else
+                {
+                    <img src="~/images/kaartback.gif" alt="DealerCard" />
+                }
+            }
+            <!--Kaarten van de dealer-->
+            <span class="total">
+                Total:@Model.DealerHand.Value
+            </span>
+        </p>
+        <p class="hand">
+
+            <!--Kaarten van de player-->
+            @foreach (var c in Model.PlayerHand.Cards)
+            {
+                if (c.FaceUp)
+                {
+                    int suit = (int)c.Suit;
+                    int value = (int)c.FaceValue;
+                    int kaartnummer = ((suit - 1) * 13) + value - 1;
+                    <img src="~/images/kaart@(kaartnummer).gif" alt="PlayerCard" />
+                }
+            }
+            <span class="total">
+                Total:@Model.PlayerHand.Value
+            </span>
+        </p>
+        <p>
+            @if (Model.GameState != BlackJackGame.Models.GameState.GameOver)
+            {
+            <a asp-controller="Home" asp-action="NextCard">Next Card</a>
+            <a asp-controller="Home" asp-action="Pass">Pass</a>
+            }
+            else 
+            {
+             <a asp-controller="Home" asp-action="Index">New Game</a>
+            }
+        </p>
+    </div>
+</body>
+</html>

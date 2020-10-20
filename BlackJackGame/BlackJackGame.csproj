@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\kaart0.gif" />
+    <None Include="wwwroot\images\kaart1.gif" />
+    <None Include="wwwroot\images\kaart10.gif" />
+    <None Include="wwwroot\images\kaart11.gif" />
+    <None Include="wwwroot\images\kaart12.gif" />
+    <None Include="wwwroot\images\kaart13.gif" />
+    <None Include="wwwroot\images\kaart14.gif" />
+    <None Include="wwwroot\images\kaart15.gif" />
+    <None Include="wwwroot\images\kaart16.gif" />
+    <None Include="wwwroot\images\kaart17.gif" />
+    <None Include="wwwroot\images\kaart18.gif" />
+    <None Include="wwwroot\images\kaart19.gif" />
+    <None Include="wwwroot\images\kaart2.gif" />
+    <None Include="wwwroot\images\kaart20.gif" />
+    <None Include="wwwroot\images\kaart21.gif" />
+    <None Include="wwwroot\images\kaart22.gif" />
+    <None Include="wwwroot\images\kaart23.gif" />
+    <None Include="wwwroot\images\kaart24.gif" />
+    <None Include="wwwroot\images\kaart25.gif" />
+    <None Include="wwwroot\images\kaart26.gif" />
+    <None Include="wwwroot\images\kaart27.gif" />
+    <None Include="wwwroot\images\kaart28.gif" />
+    <None Include="wwwroot\images\kaart29.gif" />
+    <None Include="wwwroot\images\kaart3.gif" />
+    <None Include="wwwroot\images\kaart30.gif" />
+    <None Include="wwwroot\images\kaart31.gif" />
+    <None Include="wwwroot\images\kaart32.gif" />
+    <None Include="wwwroot\images\kaart33.gif" />
+    <None Include="wwwroot\images\kaart34.gif" />
+    <None Include="wwwroot\images\kaart35.gif" />
+    <None Include="wwwroot\images\kaart36.gif" />
+    <None Include="wwwroot\images\kaart37.gif" />
+    <None Include="wwwroot\images\kaart38.gif" />
+    <None Include="wwwroot\images\kaart39.gif" />
+    <None Include="wwwroot\images\kaart4.gif" />
+    <None Include="wwwroot\images\kaart40.gif" />
+    <None Include="wwwroot\images\kaart41.gif" />
+    <None Include="wwwroot\images\kaart42.gif" />
+    <None Include="wwwroot\images\kaart43.gif" />
+    <None Include="wwwroot\images\kaart44.gif" />
+    <None Include="wwwroot\images\kaart45.gif" />
+    <None Include="wwwroot\images\kaart46.gif" />
+    <None Include="wwwroot\images\kaart47.gif" />
+    <None Include="wwwroot\images\kaart48.gif" />
+    <None Include="wwwroot\images\kaart49.gif" />
+    <None Include="wwwroot\images\kaart5.gif" />
+    <None Include="wwwroot\images\kaart50.gif" />
+    <None Include="wwwroot\images\kaart51.gif" />
+    <None Include="wwwroot\images\kaart6.gif" />
+    <None Include="wwwroot\images\kaart7.gif" />
+    <None Include="wwwroot\images\kaart8.gif" />
+    <None Include="wwwroot\images\kaart9.gif" />
+    <None Include="wwwroot\images\kaartback.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
